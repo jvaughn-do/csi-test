@@ -420,7 +420,7 @@ var _ = DescribeSanity("Node Service", func(sc *TestContext) {
 			Expect(serverError.Code()).To(Equal(codes.InvalidArgument))
 		})
 
-		It("should fail when the volume is missing", func() {
+		XIt("should fail when the volume is missing", func() {
 
 			_, err := c.NodeUnpublishVolume(
 				context.Background(),
